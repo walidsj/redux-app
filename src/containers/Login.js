@@ -1,11 +1,9 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import FormLoginComponent from '../components/login/FormLoginComponent'
-import NavbarComponent from '../components/NavbarComponent'
 
 const Login = () => {
    return (
-      <div>
-         <NavbarComponent />
+      <Fragment>
          <div className="container mt-4">
             <div className="row">
                <div className="col-md-6 col-lg-4">
@@ -21,7 +19,7 @@ const Login = () => {
                </div>
             </div>
          </div>
-      </div>
+      </Fragment>
    )
 }
 

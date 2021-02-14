@@ -1,10 +1,8 @@
-import React from 'react'
-import NavbarComponent from '../components/NavbarComponent'
+import React, { Fragment } from 'react'
 
 const Home = () => {
    return (
-      <div>
-         <NavbarComponent />
+      <Fragment>
          <div className="container mt-4">
             <div className="card shadow-sm">
                <div className="card-body">
@@ -15,7 +13,7 @@ const Home = () => {
                </div>
             </div>
          </div>
-      </div>
+      </Fragment>
    )
 }
 

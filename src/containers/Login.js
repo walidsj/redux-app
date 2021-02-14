@@ -1,9 +1,13 @@
 import React, { Fragment } from 'react'
+import { Helmet } from 'react-helmet'
 import FormLoginComponent from '../components/login/FormLoginComponent'
 
 const Login = () => {
    return (
       <Fragment>
+         <Helmet>
+            <title>Login - Staner.id</title>
+         </Helmet>
          <div className="container mt-4">
             <div className="row">
                <div className="col-md-6 col-lg-4">

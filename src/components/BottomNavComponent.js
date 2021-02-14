@@ -48,7 +48,7 @@ export class BottomNavComponent extends Component {
                               </div>
                               {!this.state.homeIconLoaded
                                  ? <Skeleton />
-                                 : <small className="text-dark fs-10 mt-0">Beranda</small>
+                                 : <small className="fs-10 mt-0">Beranda</small>
                               }
                            </Link>
                         </li>
@@ -64,7 +64,7 @@ export class BottomNavComponent extends Component {
                               </div>
                               {!this.state.noteIconLoaded
                                  ? <Skeleton />
-                                 : <small className="text-dark fs-10 mt-0">Info</small>
+                                 : <small className="fs-10 mt-0">Info</small>
                               }
                            </Link>
                         </li>
@@ -80,7 +80,7 @@ export class BottomNavComponent extends Component {
                               </div>
                               {!this.state.menuIconLoaded
                                  ? <Skeleton />
-                                 : <small className="text-dark fs-10 mt-0">Acara</small>
+                                 : <small className="fs-10 mt-0">Acara</small>
                               }
                            </Link>
                         </li>
@@ -96,7 +96,7 @@ export class BottomNavComponent extends Component {
                               </div>
                               {!this.state.userIconLoaded
                                  ? <Skeleton />
-                                 : <small className="text-dark fs-10 mt-0">Akun</small>
+                                 : <small className="fs-10 mt-0">Akun</small>
                               }
                            </Link>
                         </li>

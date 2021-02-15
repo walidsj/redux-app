@@ -14,7 +14,7 @@ const App = () => {
           <Route exact path='/' component={() => <Suspense fallback={<div>Loading...</div>}><Home /></Suspense>} />
           <Route path='/info' component={() => <Suspense fallback={<div>Loading...</div>}><Login /></Suspense>} />
           <Route path='/event' component={() => <Suspense fallback={<div>Loading...</div>}><Login /></Suspense>} />
-          <Route path='/my-account' component={() => <Suspense fallback={<div>Loading...</div>}><Login /></Suspense>} />
+          <Route path='/akun-saya' component={() => <Suspense fallback={<div>Loading...</div>}><Login /></Suspense>} />
         <BottomNavComponent/>
       </BrowserRouter>
     </Fragment>

@@ -1,9 +1,9 @@
 import React, { Component, Fragment } from 'react'
 import { Helmet } from 'react-helmet'
-import Skeleton from 'react-loading-skeleton';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
-import GreetingComponent from './components/GreetingComponent';
+import GreetingComponent from './components/GreetingComponent'
+import TopCardComponent from './components/TopCardComponent'
 
 class Home extends Component {
 
@@ -34,7 +34,12 @@ class Home extends Component {
                   <div className="container">
                      <div className="row">
                         <div className="col">
-                           <GreetingComponent/>
+                           <GreetingComponent />
+                        </div>
+                     </div>
+                     <div className="row">
+                        <div className="col">
+                           <TopCardComponent />
                         </div>
                      </div>
                   </div>

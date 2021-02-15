@@ -85,9 +85,9 @@ export class BottomNavComponent extends Component {
                            </Link>
                         </li>
                      )} />
-                     <Route path='/my-account' children={({ match }) => (
+                     <Route path='/akun-saya' children={({ match }) => (
                         <li className={match ? 'img-nav active' : 'img-nav'}>
-                           <Link to='/my-account'>
+                           <Link to='/akun-saya'>
                               <div>
                                  {!this.state.userIconLoaded &&
                                     <Skeleton />

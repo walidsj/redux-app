@@ -1258,7 +1258,7 @@ select.form-control {
    object-fit: cover;
    object-position: center;
    border-radius: 50%;
-   border: 1px solid #88888825 !important;
+   /* border: 1px solid #88888825 !important; */
    margin-right: 12px;
 }
 

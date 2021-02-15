@@ -3,7 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom'
 import BottomNavComponent from './components/BottomNavComponent'
 import TopNavComponent from './components/TopNavComponent'
 
-const Home = lazy(() => import('./containers/Home'))
+const Home = lazy(() => import('./pages/home/Home'))
 const Login = lazy(() => import('./containers/Login'))
 
 const App = () => {

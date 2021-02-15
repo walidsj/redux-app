@@ -3,17 +3,9 @@ import { Helmet } from 'react-helmet'
 import Skeleton from 'react-loading-skeleton';
 import { Link } from 'react-router-dom';
 import Slider from 'react-slick'
+import GreetingComponent from './components/GreetingComponent';
 
 class Home extends Component {
-   state = {
-      imageLoaded: false
-   }
-
-   handleLoadImage = () => {
-      this.setState({
-         imageLoaded: true
-      })
-   }
 
    render() {
       const settings = {
@@ -33,14 +25,20 @@ class Home extends Component {
                   <Slider className="carousel slide" {...settings}>
                         <Link to='/'>
                            <div>
-                              {!this.state.imageLoaded &&
-                                 <Skeleton height={165} />
-                              }
-                              <img className="d-block w-100" src="https://app.staner.id/public/img/flyer/banner-welcome.webp" onLoad={this.handleLoadImage.bind(this)} alt="BigB Plan Competition: We Dare You to Plan The Future"/>
+                              <img className="d-block w-100" src="https://app.staner.id/public/img/flyer/banner-welcome.webp" alt="Staner.id"/>
                            </div>
                         </Link>
                   </Slider>
                </header>
+               <section className="content-blank bg-gray pb-2 pt-4" style={{marginTop: '-10px'}}>
+                  <div className="container">
+                     <div className="row">
+                        <div className="col">
+                           <GreetingComponent/>
+                        </div>
+                     </div>
+                  </div>
+               </section>
             </div>
          </Fragment>
       )

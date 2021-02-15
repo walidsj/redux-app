@@ -31,7 +31,7 @@ export default class NewEventComponent extends Component {
                   </div>
                </Link>
                <Link to='/acara'>
-                  <div class="m-5 btn btn-outline-primary d-flex justify-content-center">Lihat Acara Lainnya</div>
+                  <div className="m-5 btn btn-outline-primary d-flex justify-content-center">Lihat Acara Lainnya</div>
                </Link>
             </Slider>
          </Fragment>

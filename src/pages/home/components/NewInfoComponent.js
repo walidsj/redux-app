@@ -52,7 +52,7 @@ export default class NewInfoComponent extends Component {
                   </div>
                </Link>
                <Link to='/info'>
-                  <div class="m-5 btn btn-outline-primary d-flex justify-content-center">Lihat Info Lainnya</div>
+                  <div className="m-5 btn btn-outline-primary d-flex justify-content-center">Lihat Info Lainnya</div>
                </Link>
             </Slider>
          </Fragment>

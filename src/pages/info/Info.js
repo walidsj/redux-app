@@ -17,7 +17,7 @@ export default class Info extends Component {
                         <div className="col">
                            <h5 className="head-title px-2">Informasi</h5>
                            <div className="form-group px-2">
-                              <input class="form-control" type="search" placeholder="Cari info atau pengumuman" />
+                              <input className="form-control" type="search" placeholder="Cari info atau pengumuman" />
                            </div>
                            <div className="row mb-3">
                               <div className="col">

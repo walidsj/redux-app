@@ -19,7 +19,7 @@ class TopNavComponent extends Component {
          <Fragment>
             <nav className="navbar navbar-expand-lg desktop-navigation fixed-top other-navbar shadow-sm">
                <div className="container">
-                  <div className="navbar-header mx-auto">
+                  <div className="navbar-header">
                      <Link to='/' className="navbar-brand mx-auto pt-0 mr-0">
                         {!this.state.imageLoaded &&
                            <Skeleton />

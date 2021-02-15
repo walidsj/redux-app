@@ -6,7 +6,7 @@ export default class NewInfoComponent extends Component {
    render() {
       const settings = {
          dots: true,
-         infinite: true,
+         infinite: false,
          slidesToShow: 1,
          slidesToScroll: 1,
          arrows: true

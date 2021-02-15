@@ -69,9 +69,9 @@ export class BottomNavComponent extends Component {
                            </Link>
                         </li>
                      )} />
-                     <Route path='/event' children={({ match }) => (
+                     <Route path='/acara' children={({ match }) => (
                         <li className={match ? 'img-nav active' : 'img-nav'}>
-                           <Link to='/event'>
+                           <Link to='/acara'>
                               <div>
                                  {!this.state.menuIconLoaded &&
                                     <Skeleton />

@@ -1846,7 +1846,8 @@ ol.list-popular-article>li:before {
    letter-spacing: 1px !important;
    font-size: 16px !important;
    line-height: normal !important;
-   min-height: 40px;
+   /* min-height: 60px; */
+   /* min-height: 40px; */
 }
 
 .nav-tabs {

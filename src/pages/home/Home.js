@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import { Helmet } from 'react-helmet'
+import FooterComponent from '../../components/FooterComponent'
 import BannerComponent from './components/BannerComponent'
 import BottomCardComponent from './components/BottomCardComponent'
 import GreetingComponent from './components/GreetingComponent'
@@ -51,15 +52,7 @@ class Home extends Component {
                   </div>
                </section>
             </div>
-            <footer class="footer-section">
-               <div class="container footer-left-xs">
-                  <div class="row justify-content-between">
-                     <div class="col-12 text-center">
-                        <p>©2021 BEM KM PKN STAN<br/>Hak Cipta Dilindungi</p>
-                     </div>
-                  </div>
-               </div>
-            </footer>
+            <FooterComponent />
          </Fragment>
       )
    }

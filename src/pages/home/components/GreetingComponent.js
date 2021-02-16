@@ -13,7 +13,10 @@ function GreetingComponent() {
 
    function getHour() {
       const date = new Date()
-      const hour = date.hour
+      return date.hour
+   }
+
+   function getGreeting(hour) {
       let greeting = ''
       
       if (hour > 0 && hour < 12) {
@@ -30,7 +33,8 @@ function GreetingComponent() {
    }
 
    useEffect(() => {
-      getHour()
+      const hour = getHour()
+      getGreeting(hour)
    }, [])
 
    return (

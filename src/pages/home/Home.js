@@ -12,7 +12,7 @@ class Home extends Component {
 
    render() {     
       return(
-      <Fragment>
+         <Fragment>
             <Helmet>
                <title>Staner.id</title>
             </Helmet>

@@ -15,7 +15,14 @@ export default class Info extends Component {
                   <div className="container">
                      <div className="row">
                         <div className="col">
-                           <h5 className="head-title px-2">Informasi</h5>
+                           <h5 className="head-title px-2 mb-3">Informasi</h5>
+                           <div className="form-group px-2">
+                              <select className="form-control">
+                                 <option value="">Semua Instansi</option>
+                                 <option value="">Lembaga</option>
+                                 <option value="">BEM KM PKN STAN</option>
+                              </select>
+                           </div>
                            <div className="form-group px-2">
                               <input className="form-control" type="search" placeholder="Cari info atau pengumuman" />
                            </div>

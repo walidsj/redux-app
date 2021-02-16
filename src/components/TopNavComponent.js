@@ -1,37 +1,31 @@
-import React, { Component, Fragment } from 'react'
+import React, { Fragment, useState } from 'react'
 import Skeleton from 'react-loading-skeleton'
 import { Link } from 'react-router-dom'
 import logo from '../assets/img/logo.webp'
 
-class TopNavComponent extends Component {
-   state = {
-      imageLoaded: false
+function TopNavComponent() {
+   const [imageLoaded, setImageLoaded] = useState(false)
+
+   function handleLoadImage() {
+      setImageLoaded(true)
    }
 
-   handleLoadImage = () => {
-      this.setState({
-         imageLoaded: true
-      })
-   }
-
-   render() {
-      return (
-         <Fragment>
-            <nav className="navbar navbar-expand-lg desktop-navigation fixed-top other-navbar shadow-sm">
-               <div className="container">
-                  <div className="navbar-header">
-                     <Link to='/' className="navbar-brand mx-auto pt-0 mr-0">
-                        {!this.state.imageLoaded &&
-                           <Skeleton />
-                        }
-                        <img src={logo} onLoad={this.handleLoadImage.bind(this)} alt='Staner.id' className="img-fluid logo-other" />
-                     </Link>
-                  </div>
+   return (
+      <Fragment>
+         <nav className="navbar navbar-expand-lg desktop-navigation fixed-top other-navbar shadow-sm">
+            <div className="container">
+               <div className="navbar-header">
+                  <Link to='/' className="navbar-brand mx-auto pt-0 mr-0">
+                     {!imageLoaded &&
+                        <Skeleton />
+                     }
+                     <img src={logo} onLoad={handleLoadImage.bind(this)} alt='Staner.id' className="img-fluid logo-other" />
+                  </Link>
                </div>
-            </nav>
-         </Fragment>
-      )
-   }
+            </div>
+         </nav>
+      </Fragment>
+   )
 }
 
 export default TopNavComponent

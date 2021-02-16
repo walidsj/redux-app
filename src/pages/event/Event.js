@@ -38,14 +38,14 @@ export default class Acara extends Component {
                               <div className="col">
                                  <Link to='/acara'>
                                     <div className="card mx-2">
-                                       <div class="block-over-img">
-                                          <img class="card-img-top w-100" src="https://app.staner.id/assets/img/slides/slide02.png" />
+                                       <div className="block-over-img">
+                                          <img className="card-img-top w-100" src="https://app.staner.id/assets/img/slides/slide02.png" />
                                        </div>
-                                       <div class="card-body p-3">
-                                          <h6 class="card-title mb-0">Festival Keuangan Negara</h6>
-                                          <div class="card-author-katalog align-items-center mt-2">
-                                             <p class="card-text">
-                                                <span class="fs-14 font-400">Festival Keuangan Negara</span>
+                                       <div className="card-body p-3">
+                                          <h6 className="card-title mb-0">Festival Keuangan Negara</h6>
+                                          <div className="card-author-katalog align-items-center mt-2">
+                                             <p className="card-text">
+                                                <span className="fs-14 font-400">Festival Keuangan Negara</span>
                                              </p>
                                           </div>
                                        </div>
@@ -57,14 +57,14 @@ export default class Acara extends Component {
                               <div className="col">
                                  <Link to='/acara'>
                                     <div className="card mx-2">
-                                       <div class="block-over-img">
-                                          <img class="card-img-top w-100" src="https://app.staner.id/assets/img/slides/slide02.png" />
+                                       <div className="block-over-img">
+                                          <img className="card-img-top w-100" src="https://app.staner.id/assets/img/slides/slide02.png" />
                                        </div>
-                                       <div class="card-body p-3">
-                                          <h6 class="card-title mb-0">Olimpiade APBN 2020</h6>
-                                          <div class="card-author-katalog align-items-center mt-2">
-                                             <p class="card-text">
-                                                <span class="fs-14 font-400">Kementerian Keuangan</span>
+                                       <div className="card-body p-3">
+                                          <h6 className="card-title mb-0">Olimpiade APBN 2020</h6>
+                                          <div className="card-author-katalog align-items-center mt-2">
+                                             <p className="card-text">
+                                                <span className="fs-14 font-400">Kementerian Keuangan</span>
                                              </p>
                                           </div>
                                        </div>

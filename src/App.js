@@ -6,9 +6,8 @@ import TopNavComponent from './components/TopNavComponent'
 const Home = lazy(() => import('./pages/home/Home'))
 const Info = lazy(() => import('./pages/info/Info'))
 const Event = lazy(() => import('./pages/event/Event'))
-const Login = lazy(() => import('./containers/Login'))
 
-const App = () => {
+function App() {
   return (
     <Fragment>
       <BrowserRouter>
@@ -16,7 +15,7 @@ const App = () => {
           <Route exact path='/' component={() => <Suspense fallback={<div>Loading...</div>}><Home /></Suspense>} />
           <Route path='/info' component={() => <Suspense fallback={<div>Loading...</div>}><Info /></Suspense>} />
           <Route path='/acara' component={() => <Suspense fallback={<div>Loading...</div>}><Event /></Suspense>} />
-          <Route path='/akun-saya' component={() => <Suspense fallback={<div>Loading...</div>}><Login /></Suspense>} />
+          <Route path='/akun-saya' component={() => <Suspense fallback={<div>Loading...</div>}><Home /></Suspense>} />
         <BottomNavComponent/>
       </BrowserRouter>
     </Fragment>

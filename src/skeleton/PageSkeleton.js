@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react'
 import Skeleton from 'react-loading-skeleton'
-import FooterComponent from '../../components/FooterComponent'
+import FooterComponent from '../components/FooterComponent'
 
 function PageSkeleton() {
    return (
@@ -24,10 +24,10 @@ function PageSkeleton() {
                         <div className="px-2">
                            <div className="row">
                               <div className="col pr-2">
-                                 <Skeleton height={100} />
+                                 <Skeleton height={125} />
                               </div>
                               <div className="col pl-2">
-                                 <Skeleton height={100} />
+                                 <Skeleton height={125} />
                               </div>
                            </div>
                         </div>

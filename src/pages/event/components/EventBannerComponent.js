@@ -2,7 +2,7 @@ import React, { Component, Fragment } from 'react'
 import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
 
-export default class BannerComponent extends Component {
+export default class EventBannerComponent extends Component {
    render() {
       const settings = {
          dots: false,

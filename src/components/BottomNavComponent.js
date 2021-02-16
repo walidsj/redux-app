@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from 'react'
 import Skeleton from 'react-loading-skeleton'
-import { Link, NavLink, Route } from 'react-router-dom'
+import { Link, Route } from 'react-router-dom'
 import homeIcon from '../assets/img/icon/home.svg'
 import menuIcon from '../assets/img/icon/menu.svg'
 import noteIcon from '../assets/img/icon/note.svg'

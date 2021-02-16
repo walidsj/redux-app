@@ -15,7 +15,7 @@ function PageWithBannerSkeleton() {
                      <div className="col">
                         <div className="head-title px-2 pb-2"><Skeleton height={25} /></div>
                         <div className="px-2">
-                           <Skeleton count={3} />
+                           <Skeleton count={2} />
                         </div>
                      </div>
                   </div>

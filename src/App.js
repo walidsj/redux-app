@@ -1,4 +1,4 @@
-import React, { Fragment, useEffect } from 'react'
+import React, { useEffect } from 'react'
 import { BrowserRouter, useLocation } from 'react-router-dom'
 import BottomNavComponent from './components/BottomNavComponent'
 import TopNavComponent from './components/TopNavComponent'
@@ -16,14 +16,14 @@ export function ScrollToTop() {
 
 function App() {
   return (
-    <Fragment>
+    <>
       <BrowserRouter>
         <ScrollToTop />
         <TopNavComponent />
         <Router />
         <BottomNavComponent/>
       </BrowserRouter>
-    </Fragment>
+    </>
   )
 }
 

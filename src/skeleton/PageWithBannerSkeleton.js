@@ -1,10 +1,10 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import Skeleton from 'react-loading-skeleton'
 import FooterComponent from '../components/FooterComponent'
 
 function PageWithBannerSkeleton() {
    return (
-      <Fragment>
+      <>
          <div className="content-box content-other">
             <header id="headerSection" className="home-section">
                <Skeleton height={150} />
@@ -37,7 +37,7 @@ function PageWithBannerSkeleton() {
             </section>
          </div>
          <FooterComponent />
-      </Fragment>
+      </>
       )
 }
 

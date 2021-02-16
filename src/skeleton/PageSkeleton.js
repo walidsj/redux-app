@@ -1,10 +1,10 @@
-import React, { Fragment } from 'react'
+import React from 'react'
 import Skeleton from 'react-loading-skeleton'
 import FooterComponent from '../components/FooterComponent'
 
 function PageSkeleton() {
    return (
-      <Fragment>
+      <>
          <div className="content-box content-other">
             <section className="content-blank bg-gray pb-2 pt-5">
                <div className="container">
@@ -42,7 +42,7 @@ function PageSkeleton() {
             </section>
          </div>
          <FooterComponent />
-      </Fragment>
+      </>
       )
 }
 

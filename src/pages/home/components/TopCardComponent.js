@@ -1,10 +1,9 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default class TopCardComponent extends Component {
-   render() {
-      return (
-         <div className="container">
+function TopCardComponent() {
+   return (
+       <div className="container">
             <div className="row">
                <div className="col-6 mb-3 px-2">
                   <Link to='/peraturan-kampus'>
@@ -37,5 +36,6 @@ export default class TopCardComponent extends Component {
             </div>
          </div>
       )
-   }
 }
+
+export default TopCardComponent

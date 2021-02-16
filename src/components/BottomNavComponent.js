@@ -1,4 +1,4 @@
-import React, { Fragment, useState } from 'react'
+import React, { useState } from 'react'
 import Skeleton from 'react-loading-skeleton'
 import { Link, Route } from 'react-router-dom'
 import homeIcon from '../assets/img/icon/home.svg'
@@ -29,78 +29,76 @@ function BottomNavComponent() {
    }
 
    return (
-      <Fragment>
-         <nav className="navbar navbar-expand-lg desktop-navigation other-navbar p-0 d-block fixed-bottom">
-            <div className="container">
-               <ul className="menu-mobile-bottom">
-                  <Route path='/' exact children={({ match }) => (
-                     <li className={match ? 'img-nav active' : 'img-nav'}>
-                        <Link to='/'>
-                           <div>
-                              {!homeIconLoaded &&
-                                 <Skeleton />
-                              }
-                              <img src={homeIcon} onLoad={handleLoadHomeIcon.bind(this)} alt='Staner.id' height="24" />
-                           </div>
-                           {!homeIconLoaded
-                              ? <Skeleton />
-                              : <small className="fs-10 mt-0">Beranda</small>
+      <nav className="navbar navbar-expand-lg desktop-navigation other-navbar p-0 d-block fixed-bottom">
+         <div className="container">
+            <ul className="menu-mobile-bottom">
+               <Route path='/' exact children={({ match }) => (
+                  <li className={match ? 'img-nav active' : 'img-nav'}>
+                     <Link to='/'>
+                        <div>
+                           {!homeIconLoaded &&
+                              <Skeleton />
                            }
-                        </Link>
-                     </li>
-                  )} />
-                  <Route path='/info' children={({ match }) => (
-                     <li className={match ? 'img-nav active' : 'img-nav'}>
-                        <Link to='/info'>
-                           <div>
-                              {!noteIconLoaded &&
-                                 <Skeleton />
-                              }
-                              <img src={noteIcon} onLoad={handleLoadNoteIcon.bind(this)} alt='Staner.id' height="24" />
-                           </div>
-                           {!noteIconLoaded
-                              ? <Skeleton />
-                              : <small className="fs-10 mt-0">Info</small>
+                           <img src={homeIcon} onLoad={handleLoadHomeIcon.bind(this)} alt='Staner.id' height="24" />
+                        </div>
+                        {!homeIconLoaded
+                           ? <Skeleton />
+                           : <small className="fs-10 mt-0">Beranda</small>
+                        }
+                     </Link>
+                  </li>
+               )} />
+               <Route path='/info' children={({ match }) => (
+                  <li className={match ? 'img-nav active' : 'img-nav'}>
+                     <Link to='/info'>
+                        <div>
+                           {!noteIconLoaded &&
+                              <Skeleton />
                            }
-                        </Link>
-                     </li>
-                  )} />
-                  <Route path='/acara' children={({ match }) => (
-                     <li className={match ? 'img-nav active' : 'img-nav'}>
-                        <Link to='/acara'>
-                           <div>
-                              {!menuIconLoaded &&
-                                 <Skeleton />
-                              }
-                              <img src={menuIcon} onLoad={handleLoadMenuIcon.bind(this)} alt='Staner.id' height="24" />
-                           </div>
-                           {!menuIconLoaded
-                              ? <Skeleton />
-                              : <small className="fs-10 mt-0">Acara</small>
+                           <img src={noteIcon} onLoad={handleLoadNoteIcon.bind(this)} alt='Staner.id' height="24" />
+                        </div>
+                        {!noteIconLoaded
+                           ? <Skeleton />
+                           : <small className="fs-10 mt-0">Info</small>
+                        }
+                     </Link>
+                  </li>
+               )} />
+               <Route path='/acara' children={({ match }) => (
+                  <li className={match ? 'img-nav active' : 'img-nav'}>
+                     <Link to='/acara'>
+                        <div>
+                           {!menuIconLoaded &&
+                              <Skeleton />
                            }
-                        </Link>
-                     </li>
-                  )} />
-                  <Route path='/akun-saya' children={({ match }) => (
-                     <li className={match ? 'img-nav active' : 'img-nav'}>
-                        <Link to='/akun-saya'>
-                           <div>
-                              {!userIconLoaded &&
-                                 <Skeleton />
-                              }
-                              <img src={userIcon} onLoad={handleLoadUserIcon.bind(this)} alt='Staner.id' height="24" />
-                           </div>
-                           {!userIconLoaded
-                              ? <Skeleton />
-                              : <small className="fs-10 mt-0">Akun</small>
+                           <img src={menuIcon} onLoad={handleLoadMenuIcon.bind(this)} alt='Staner.id' height="24" />
+                        </div>
+                        {!menuIconLoaded
+                           ? <Skeleton />
+                           : <small className="fs-10 mt-0">Acara</small>
+                        }
+                     </Link>
+                  </li>
+               )} />
+               <Route path='/akun-saya' children={({ match }) => (
+                  <li className={match ? 'img-nav active' : 'img-nav'}>
+                     <Link to='/akun-saya'>
+                        <div>
+                           {!userIconLoaded &&
+                              <Skeleton />
                            }
-                        </Link>
-                     </li>
-                  )} />
-               </ul>
-            </div>
-         </nav>
-      </Fragment>
+                           <img src={userIcon} onLoad={handleLoadUserIcon.bind(this)} alt='Staner.id' height="24" />
+                        </div>
+                        {!userIconLoaded
+                           ? <Skeleton />
+                           : <small className="fs-10 mt-0">Akun</small>
+                        }
+                     </Link>
+                  </li>
+               )} />
+            </ul>
+         </div>
+      </nav>
    )
 }
 

@@ -2,6 +2,7 @@ import React, { Component, Fragment } from 'react'
 import { Helmet } from 'react-helmet'
 import { Link } from 'react-router-dom'
 import FooterComponent from '../../components/FooterComponent'
+import InfoCardComponent from './components/InfoCardComponent'
 
 export default class Info extends Component {
    render() {
@@ -16,6 +17,12 @@ export default class Info extends Component {
                      <div className="row">
                         <div className="col">
                            <h5 className="head-title px-2 mb-3">Informasi</h5>
+                           <InfoCardComponent />
+                        </div>
+                     </div>
+                     <div className="row">
+                        <div className="col">
+                           <h5 className="head-title px-2 mb-3">Pengumuman</h5>
                            <div className="form-group px-2">
                               <select className="form-control">
                                  <option value="">Semua Instansi</option>

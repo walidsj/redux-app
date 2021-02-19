@@ -1,8 +1,8 @@
 import React, { lazy, Suspense } from 'react'
 import { Route } from 'react-router-dom'
-import AccountSkeleton from './skeleton/AccountSkeleton'
-import PageSkeleton from './skeleton/PageSkeleton'
-import PageWithBannerSkeleton from './skeleton/PageWithBannerSkeleton'
+import AccountSkeleton from './components/skeleton/AccountSkeleton'
+import PageSkeleton from './components/skeleton/PageSkeleton'
+import PageWithBannerSkeleton from './components/skeleton/PageWithBannerSkeleton'
 
 const CampusLaw = lazy(() => import('./pages/campus-law/CampusLaw'))
 const Home = lazy(() => import('./pages/home/Home'))

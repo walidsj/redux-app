@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import Slider from 'react-slick'
 
-function BannerComponent() {
+function BannerComponent(props) {
    const settings = {
       dots: false,
       infinite: true,
@@ -11,19 +11,18 @@ function BannerComponent() {
       autoplay: true,
       autoplaySpeed: 5000
    };
-   
+
    return (
       <Slider className="carousel slide" {...settings}>
-         <Link to='/'>
-            <div>
-               <img className="d-block w-100" src="https://app.staner.id/public/img/flyer/banner-welcome.webp" alt="Staner.id"/>
-            </div>
-         </Link>
-         <Link to='/'>
-            <div>
-               <img className="d-block w-100" src="https://app.staner.id/public/img/flyer/banner-welcome.webp" alt="Staner.id"/>
-            </div>
-         </Link>
+         {
+            props.slides.map((slide, i) => (
+               <Link key={i} to={slide.link}>
+                  <div>
+                     <img className="d-block w-100" src={slide.image_url} alt={slide.title} />
+                  </div>
+               </Link>
+            ))
+         }
       </Slider>
    )
 }

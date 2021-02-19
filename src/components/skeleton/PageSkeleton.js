@@ -1,15 +1,12 @@
 import React from 'react'
 import Skeleton from 'react-loading-skeleton'
-import FooterComponent from '../components/FooterComponent'
+import FooterComponent from '../FooterComponent'
 
-function PageWithBannerSkeleton() {
+function PageSkeleton() {
    return (
       <>
          <div className="content-box content-other">
-            <header id="headerSection" className="home-section">
-               <Skeleton height={150} />
-            </header>
-            <section className="content-blank bg-gray pb-2 pt-4">
+            <section className="content-blank bg-gray pb-2 pt-5">
                <div className="container">
                   <div className="row py-2">
                      <div className="col">
@@ -33,6 +30,14 @@ function PageWithBannerSkeleton() {
                         </div>
                      </div>
                   </div>
+                  <div className="row py-2">
+                     <div className="col">
+                        <div className="head-title px-2 pb-2"><Skeleton height={25} /></div>
+                        <div className="px-2">
+                           <Skeleton count={3} />
+                        </div>
+                     </div>
+                  </div>
                </div>
             </section>
          </div>
@@ -41,4 +46,4 @@ function PageWithBannerSkeleton() {
       )
 }
 
-export default PageWithBannerSkeleton
+export default PageSkeleton

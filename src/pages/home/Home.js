@@ -1,5 +1,9 @@
-import React from 'react'
+import axios from 'axios'
+import React, { useEffect, useState } from 'react'
 import { Helmet } from 'react-helmet'
+import Skeleton from 'react-loading-skeleton'
+import { useDispatch, useSelector } from 'react-redux'
+import { updateBanners } from '../../actions'
 import FooterComponent from '../../components/FooterComponent'
 import BannerComponent from './components/BannerComponent'
 import BottomCardComponent from './components/BottomCardComponent'
@@ -9,6 +13,20 @@ import NewInfoComponent from './components/NewInfoComponent'
 import TopCardComponent from './components/TopCardComponent'
 
 function Home() {
+   const homeBanner = useSelector(state => state.homeBanner)
+   const dispatch = useDispatch()
+   
+   const [banners, setBanners] = useState(homeBanner)
+
+   useEffect(() => {
+      axios.get(process.env.REACT_APP_REST_API_URL.concat('/app/banners'))
+         .then(res => {
+            let banners = res.data.data
+            dispatch(updateBanners(banners))
+            setBanners(banners)
+         })
+   }, [])
+
    return (
       <>
          <Helmet>
@@ -16,7 +34,11 @@ function Home() {
          </Helmet>
          <div className="content-box content-other">
             <header id="headerSection" className="home-section">
-               <BannerComponent />
+               {
+                  !banners
+                     ? <Skeleton height={170} />
+                     : <BannerComponent slides={banners} />
+               }
             </header>
             <section className="content-blank bg-gray pb-2 pt-4" style={{marginTop: '-10px'}}>
                <div className="container">

@@ -10,3 +10,10 @@ export const decrement = () => {
       type: 'DECREMENT'
    }
 }
+
+export const updateBanners = (slides) => {
+   return {
+      type: 'UPDATE_BANNER',
+      payload: slides
+   }
+}

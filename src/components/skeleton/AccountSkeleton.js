@@ -1,6 +1,6 @@
 import React from 'react'
 import Skeleton from 'react-loading-skeleton'
-import FooterComponent from '../components/FooterComponent'
+import FooterComponent from '../FooterComponent'
 
 function AccountSkeleton() {
    return (

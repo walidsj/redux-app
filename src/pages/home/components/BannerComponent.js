@@ -18,7 +18,7 @@ function BannerComponent(props) {
             props.slides.map((slide, i) => (
                <Link key={i} to={slide.link}>
                   <div>
-                     <img className="d-block w-100" src={slide.image_url} alt={slide.title} />
+                     <img className="d-block w-100" src={slide.image} alt={slide.title} />
                   </div>
                </Link>
             ))
